@@ -68,7 +68,7 @@ public class ControlCar : MonoBehaviour {
 
     }
 
-    WheelCollider GetCollider(int n)
+    private WheelCollider GetCollider(int n)
     {
         return Wheels[n].gameObject.GetComponent<WheelCollider>();
     }
