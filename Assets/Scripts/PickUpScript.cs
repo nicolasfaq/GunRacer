@@ -20,6 +20,11 @@ public class PickUpScript : MonoBehaviour {
         {
             Debug.Log("Car has entered");
             this.gameObject.transform.parent = c.transform;
+            if (this.gameObject.tag == "Rocket")
+            {
+                this.gameObject.transform.localPosition = new Vector3(-0.12f, 1.07f, -0.04f);
+            }
+            
         }
         
     }
