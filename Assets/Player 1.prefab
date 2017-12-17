@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 114318086422410706}
   - component: {fileID: 54476803482225358}
   - component: {fileID: 114073270172235766}
+  - component: {fileID: 65640290482879144}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -871,6 +872,18 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c3becaac5f1793241bed4839475b0838, type: 3}
+--- !u!65 &65640290482879144
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784534047460762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.93, y: 1.3, z: 4.57}
+  m_Center: {x: 0, y: 0.31, z: 0}
 --- !u!81 &81711032277687310
 AudioListener:
   m_ObjectHideFlags: 1
