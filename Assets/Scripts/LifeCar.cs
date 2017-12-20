@@ -6,20 +6,32 @@ public class LifeCar : MonoBehaviour {
 
     public float PvMax;
     public float CurrentPv;
+    public Transform UiLife;
 
     public void Damage(int i)
     {
         CurrentPv -= i;
-        //if (CurrentPv <= 0)
-        //    Destroy(gameObject);
+    }
+
+    public void ResetPv()
+    {
+        CurrentPv = PvMax;
     }
     // Use this for initialization
     void Start () {
-        CurrentPv = PvMax;
+        ResetPv();
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void FixedUpdate () {
+        // test
+        if (Input.GetKey("n"))
+            CurrentPv -= 1;
+        if(CurrentPv >= 0)
+        {
+            float fact = CurrentPv / PvMax;
+            UiLife.localScale = new Vector3(fact, 1, 1);
+        }
+    }
+        
 }

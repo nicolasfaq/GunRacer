@@ -44,7 +44,7 @@ public class ControlCar : MonoBehaviour {
         Wheels[0].Rotate(GetCollider(0).rpm / 60 * 360 * Time.deltaTime, 0, 0);
         Wheels[1].Rotate(GetCollider(1).rpm / 60 * 360 * Time.deltaTime, 0, 0);
         Wheels[2].Rotate(GetCollider(2).rpm / 60 * 360 * Time.deltaTime, 0, 0);
-        Wheels[3].Rotate(-GetCollider(3).rpm / 60 * 360 * Time.deltaTime, 0 ,0);
+        Wheels[3].Rotate(GetCollider(3).rpm / 60 * 360 * Time.deltaTime, 0 ,0);
 
 		if (Brake > 0.0f) {
 			GetCollider (0).brakeTorque = Brake;
@@ -62,7 +62,9 @@ public class ControlCar : MonoBehaviour {
 			GetCollider(2).brakeTorque = 0.0f;
 			GetCollider(3).brakeTorque = 0.0f;
 
-			GetCollider(2).motorTorque = InstantPower;
+            //GetCollider(0).motorTorque = InstantPower;
+            //GetCollider(1).motorTorque = InstantPower;
+            GetCollider(2).motorTorque = InstantPower;
 			GetCollider(3).motorTorque = InstantPower;
 		}
 
