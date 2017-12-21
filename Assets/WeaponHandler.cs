@@ -5,21 +5,28 @@ using UnityEngine;
 public class WeaponHandler : MonoBehaviour {
 
     public GameObject CurentWeapon;
+    public KeyCode shoot;
+    
 
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (Input.GetKey(KeyCode.Space))
-        {
+	void FixedUpdate () {
+		if (Input.GetKeyDown(shoot))
+        { 
             if (CurentWeapon != null)
             {
-                //Tir
+                gameObject.GetComponentInChildren<ShootScript>().Shoot();
             }
         }
 	}
+
+    //IEnumerator CallShoot()
+    //{
+    //    yield return WaitForEndOfFrame;
+    //    gameObject.GetComponentInChildren<ShootScript>().Shoot();
+    //}
 }

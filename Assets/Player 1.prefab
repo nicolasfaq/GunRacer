@@ -247,8 +247,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784534047460762}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 254.42, y: 0.849, z: 326.87}
+  m_LocalRotation: {x: 0, y: 0.7094477, z: 0, w: 0.7047581}
+  m_LocalPosition: {x: 290.09, y: 1.1, z: 97.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4348895640172824}
@@ -402,13 +402,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1288376892057756}
-  m_LocalRotation: {x: -0.00887438, y: -0.9959506, z: 0.0894538, w: 0.0013502745}
-  m_LocalPosition: {x: 0, y: 1.71, z: 6.18}
+  m_LocalRotation: {x: -0.008729455, y: -0.9909775, z: 0.13374053, w: 0.00093622395}
+  m_LocalPosition: {x: 0, y: 2.91, z: 6.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4012282551121090}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 10.2630005, y: -179.751, z: 1.0430001}
+  m_LocalEulerAnglesHint: {x: 15.37, y: -179.751, z: 1.0430001}
 --- !u!4 &4973233143224156
 Transform:
   m_ObjectHideFlags: 1
@@ -868,7 +868,7 @@ MeshCollider:
   m_GameObject: {fileID: 1171115060999654}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_InflateMesh: 0
@@ -953,10 +953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ef508d9e31a3b499920c0242f3b8df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ListCheckpoint:
-  - {fileID: 0}
-  - {fileID: 0}
-  AllPassed: 0
+  TotCheckpoint: 6
+  StatCheckpoint: 0
   WinText: {fileID: 0}
 --- !u!114 &114446400216593936
 MonoBehaviour:
@@ -972,6 +970,7 @@ MonoBehaviour:
   PvMax: 10
   CurrentPv: 0
   UiLife: {fileID: 0}
+  Respawn: a
 --- !u!114 &114863910434076198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -984,6 +983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurentWeapon: {fileID: 0}
+  shoot: 99
 --- !u!124 &124307661582735678
 Behaviour:
   m_ObjectHideFlags: 1

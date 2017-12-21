@@ -8,6 +8,8 @@ public class LifeCar : MonoBehaviour {
     public float CurrentPv;
     public Transform UiLife;
 
+    public string Respawn;
+
     public void Damage(int i)
     {
         CurrentPv -= i;
@@ -24,9 +26,8 @@ public class LifeCar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        // test
-        if (Input.GetKey("n"))
-            CurrentPv -= 1;
+        if (Input.GetKey(Respawn))
+            CurrentPv = 0;
         if(CurrentPv >= 0)
         {
             float fact = CurrentPv / PvMax;

@@ -37,6 +37,7 @@ public class PickUpScript : MonoBehaviour {
                 Destroy(c.GetComponent<WeaponHandler>().CurentWeapon);
 
             c.GetComponent<WeaponHandler>().CurentWeapon = gameObject;
+            c.GetComponentInChildren<ShootScript>().Reload();
         }
         
     }

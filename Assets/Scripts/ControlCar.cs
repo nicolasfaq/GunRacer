@@ -8,7 +8,7 @@ public class ControlCar : MonoBehaviour {
     public string MoveBackward;
     public string TurnRight;
     public string TurnLeft;
-	public KeyCode shoot;
+
 
 
 
@@ -21,8 +21,7 @@ public class ControlCar : MonoBehaviour {
     private float WheelTurn = 0.0f;
 
     private Rigidbody CarRigidbody;
-	public Transform BulletStartPosition;
-	public GameObject PrefabBullet;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -73,17 +72,7 @@ public class ControlCar : MonoBehaviour {
             GetCollider(3).motorTorque = InstantPower;
         }
 
-		if(Input.GetKeyDown(shoot))
-		{
-			Debug.Log ("jghjk");
-			GameObject Bullet = Instantiate<GameObject>(PrefabBullet);
-			Bullet.transform.position = BulletStartPosition.position;
-			Bullet.GetComponent<Rigidbody>().AddForce(BulletStartPosition.forward * 650);
-
-			// Destroy the bullet after 2 seconds
-			DestroyObject(Bullet,3.0f);
-
-		}
+		
 
     }
 
