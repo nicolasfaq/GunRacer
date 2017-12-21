@@ -674,12 +674,12 @@ Prefab:
     - target: {fileID: 224638700716355504, guid: a025e36f1ed6d4c41bfd451ce4e4bcc0,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 283.13232
+      value: -65.24954
       objectReference: {fileID: 0}
     - target: {fileID: 224638700716355504, guid: a025e36f1ed6d4c41bfd451ce4e4bcc0,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -89.89456
       objectReference: {fileID: 0}
     - target: {fileID: 224638700716355504, guid: a025e36f1ed6d4c41bfd451ce4e4bcc0,
         type: 2}
@@ -2887,12 +2887,12 @@ Prefab:
     - target: {fileID: 224976320909957000, guid: 3bcfdaac6b9bf8148afec3eab3d20762,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 283.08252
+      value: -65.24954
       objectReference: {fileID: 0}
     - target: {fileID: 224976320909957000, guid: 3bcfdaac6b9bf8148afec3eab3d20762,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -89.89456
       objectReference: {fileID: 0}
     - target: {fileID: 224976320909957000, guid: 3bcfdaac6b9bf8148afec3eab3d20762,
         type: 2}
@@ -3009,7 +3009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1383713008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3626,7 +3626,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6a8480ce736b9fb439828dc832c57023, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6a8480ce736b9fb439828dc832c57023, type: 2}
       propertyPath: m_LocalScale.y
@@ -3714,7 +3714,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1639523949
 Prefab:
