@@ -6,19 +6,19 @@ public class ShootScript : MonoBehaviour {
 
     public Transform BulletStartPosition;
     public GameObject PrefabBullet;
+    public int SpeedBullet;
     public int MaxBullet;
-    public int CurrentBullet = 5;
-    public int DamagePoint;
+    public int CurrentBullet;
+    
 
 	// Use this for initialization
 	void Start () {
-		
+        CurrentBullet = MaxBullet;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        //if (CurrentBullet == 0)
-        //    Destroy(gameObject);
+        
 
     }
 
@@ -28,7 +28,8 @@ public class ShootScript : MonoBehaviour {
         CurrentBullet -= 1;
         GameObject Bullet = Instantiate<GameObject>(PrefabBullet);
         Bullet.transform.position = BulletStartPosition.position;
-        Bullet.GetComponent<Rigidbody>().AddForce(BulletStartPosition.forward * 650);
+        Bullet.transform.rotation = BulletStartPosition.transform.rotation;
+        Bullet.GetComponent<Rigidbody>().AddForce(BulletStartPosition.forward * SpeedBullet);
 
         // Destroy the bullet after 2 seconds
         DestroyObject(Bullet, 3.0f);
@@ -37,10 +38,5 @@ public class ShootScript : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-    }
-
-    public void Reload()
-    {
-        CurrentBullet = MaxBullet;
     }
 }

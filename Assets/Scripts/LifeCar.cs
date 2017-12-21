@@ -34,5 +34,15 @@ public class LifeCar : MonoBehaviour {
             UiLife.localScale = new Vector3(fact, 1, 1);
         }
     }
-        
+
+    private void OnTriggerEnter(Collider c)
+    {
+        if (c.gameObject.tag == "Bullet")
+        {
+            Damage(c.GetComponent<DamageScript>().DamagePoint);
+            Destroy(c.gameObject);
+        }
+            
+    }
+
 }
