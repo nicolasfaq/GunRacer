@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MineExplode : MonoBehaviour {
 
-	public AudioClip Hurt;
-	public AudioClip Explosion;
 	private GameObject Mine;
 
 	// Use this for initialization
@@ -18,7 +16,7 @@ public class MineExplode : MonoBehaviour {
 	{
 		if (other.tag == "Player") {
 			transform.GetChild (0).GetComponent<ParticleSystem> ().Play();
-
+            gameObject.GetComponent<AudioSource>().Play();
 		}
 	}
 }

@@ -18,7 +18,6 @@ public class PickUpScript : MonoBehaviour {
     {
         if(c.gameObject.tag == "Player")
         {
-            Debug.Log("Car has entered");
             this.gameObject.transform.parent = c.transform;
             if (this.gameObject.tag == "RocketLauncher")
             {

@@ -69,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1494680357525712}
   m_LocalRotation: {x: 2.3701965e-10, y: 0.99994123, z: -0.000000021854426, w: 0.010844778}
-  m_LocalPosition: {x: 282.69, y: 0.85, z: 97.7}
+  m_LocalPosition: {x: 260.21252, y: 0.5000137, z: 385.71182}
   m_LocalScale: {x: 0.9000035, y: 0.47249842, z: 0.5465554}
   m_Children:
   - {fileID: 4464333580310068}
@@ -245,7 +245,7 @@ MonoBehaviour:
   PrefabBullet: {fileID: 1818663395070750, guid: 94676c1d83dfc0d408296a0bb0e1fc0a,
     type: 2}
   SpeedBullet: 6000
-  MaxBullet: 5
+  MaxBullet: 10
   CurrentBullet: 5
 --- !u!114 &114420880985119550
 MonoBehaviour:

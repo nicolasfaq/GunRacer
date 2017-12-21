@@ -56,7 +56,7 @@ public class LifeCar : MonoBehaviour {
         {
             Damage(c.GetComponent<DamageScript>().DamagePoint);
 
-            Destroy(c.gameObject, 2.0f);
+            Destroy(c.gameObject, 1.5f);
         }
     }
     //private void OnCollisionEnter(Collision c)
