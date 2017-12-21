@@ -7,8 +7,10 @@ public class CheckpointScript : MonoBehaviour {
     //public Transform[] ListCheckpoint;
     //public Transform ActiveCheckpoint;
     //public RespawnCar Car;
-    public Transform Checkpoint;
+    private Transform Checkpoint;
     // Use this for initialization	
+    public int Id;
+
     void Start () {
         Checkpoint = gameObject.GetComponent<Transform>();
 	}
@@ -22,7 +24,7 @@ public class CheckpointScript : MonoBehaviour {
     {
         //Car.SetLastCheckpoint(Checkpoint);
         c.GetComponent<RespawnCar>().SetLastCheckpoint(Checkpoint);
-        c.GetComponent<VictoryScript>().SetCheckpointPassed();
+        c.GetComponent<VictoryScript>().AllPassed[Id]=true;
         //Debug.Log("Checkpoint x : " + Checkpoint.position.x.ToString());
     }
 }

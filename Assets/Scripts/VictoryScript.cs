@@ -12,29 +12,25 @@ public class VictoryScript : MonoBehaviour {
     public int StatCheckpoint = 0;
     //public bool AllPassed;
     public Text WinText;
+    public List<bool> AllPassed = new List<bool>();
 	// Use this for initialization
 	void Start () {
-        //for (int i = 0; i < ListCheckpoint.Length; i++)
-        //{
-        //    bool IsPassed = false;
-        //    ListIsPassedCheckpoint.Add(ListCheckpoint[i],IsPassed);
-        //}
+        for (int i = 0; i < TotCheckpoint; i++)
+        {
+            AllPassed.Add(false);
+        }
+
+
         WinText.gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        //if (ListIsPassedCheckpoint.ContainsValue(false))
-        //{
-        //    AllPassed = false;
-        //}
-        //else
-        //{
-        //    AllPassed = true;
-        //}
 
-        if (StatCheckpoint == TotCheckpoint)
+        //if(!AllPassed.Contains(false))
+        //if (StatCheckpoint == TotCheckpoint)
+        if (!AllPassed.Contains(false))
         {
             WinText.text = gameObject.name + " a gagné la course !";
             WinText.gameObject.SetActive(true);

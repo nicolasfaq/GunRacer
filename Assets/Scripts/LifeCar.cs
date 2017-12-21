@@ -27,7 +27,11 @@ public class LifeCar : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         if (Input.GetKey(Respawn))
+        {
             CurrentPv = 0;
+            //gameObject.GetComponent<VictoryScript>().StatCheckpoint;
+        }
+            
         if(CurrentPv >= 0)
         {
             float fact = CurrentPv / PvMax;

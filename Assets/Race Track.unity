@@ -627,6 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Checkpoint: {fileID: 0}
+  Id: 1
 --- !u!65 &172300193
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -869,6 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Checkpoint: {fileID: 0}
+  Id: 3
 --- !u!65 &275300778
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1607,6 +1609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Checkpoint: {fileID: 0}
+  Id: 0
 --- !u!65 &669916534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1805,6 +1808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Checkpoint: {fileID: 0}
+  Id: 2
 --- !u!65 &764607611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2574,6 +2578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Checkpoint: {fileID: 0}
+  Id: 5
 --- !u!1 &1048124324 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1460074689933594, guid: 142c9473baa51be449ec85470fcdcae5,
@@ -2842,6 +2847,7 @@ MonoBehaviour:
   TotCheckpoint: 6
   StatCheckpoint: 0
   WinText: {fileID: 1401566764}
+  AllPassed: 
 --- !u!114 &1251204779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,6 +3053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Checkpoint: {fileID: 0}
+  Id: 4
 --- !u!65 &1458531648
 BoxCollider:
   m_ObjectHideFlags: 0
