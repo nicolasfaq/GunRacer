@@ -55,8 +55,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1916512033867682}
-  m_LocalRotation: {x: -0.009366576, y: -0.0005026559, z: 0.0005024633, w: 0.9999559}
-  m_LocalPosition: {x: -0.01, y: 0.18, z: 3.41}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.009931446, y: 0.18001322, z: 3.4099424}
   m_LocalScale: {x: 1.1114489, y: 2.1164093, z: 1.8293083}
   m_Children: []
   m_Father: {fileID: 4932639744736824}
@@ -69,13 +69,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1494680357525712}
   m_LocalRotation: {x: 2.3701965e-10, y: 0.99994123, z: -0.000000021854426, w: 0.010844778}
-  m_LocalPosition: {x: 260.21252, y: 0.5000137, z: 385.71182}
-  m_LocalScale: {x: 0.9000035, y: 0.47249842, z: 0.5465554}
+  m_LocalPosition: {x: 181.36145, y: 2, z: 307.7042}
+  m_LocalScale: {x: 0.900004, y: 0.47249842, z: 0.54655564}
   m_Children:
   - {fileID: 4464333580310068}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 178.757, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &23367457712627008
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -131,7 +131,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!82 &82247040007559400
 AudioSource:
@@ -246,7 +246,7 @@ MonoBehaviour:
     type: 2}
   SpeedBullet: 6000
   MaxBullet: 10
-  CurrentBullet: 5
+  CurrentBullet: 6
 --- !u!114 &114420880985119550
 MonoBehaviour:
   m_ObjectHideFlags: 1

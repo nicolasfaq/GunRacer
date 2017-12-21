@@ -24,11 +24,11 @@ public class ShootScript : MonoBehaviour {
 
     public void Shoot()
     {
-
+        BulletStartPosition.transform.rotation = new Quaternion(0, 0, 0, 0);
         CurrentBullet -= 1;
         GameObject Bullet = Instantiate<GameObject>(PrefabBullet);
         Bullet.transform.position = BulletStartPosition.position;
-        Bullet.transform.rotation = BulletStartPosition.transform.rotation;
+        Bullet.transform.localRotation = BulletStartPosition.transform.rotation;
         Bullet.GetComponent<Rigidbody>().AddForce(BulletStartPosition.forward * SpeedBullet);
 
         // Destroy the bullet after 2 seconds

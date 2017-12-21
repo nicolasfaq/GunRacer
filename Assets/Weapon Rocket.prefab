@@ -244,7 +244,7 @@ MonoBehaviour:
   BulletStartPosition: {fileID: 4300846196832002}
   PrefabBullet: {fileID: 1000011064763136, guid: 337336648e3c8cd439068695f1e2e5e1,
     type: 2}
-  SpeedBullet: 1000
+  SpeedBullet: 2500
   MaxBullet: 5
   CurrentBullet: 0
 --- !u!114 &114664115380892216
