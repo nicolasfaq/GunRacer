@@ -22,7 +22,7 @@ public class CheckpointScript : MonoBehaviour {
     {
         //Car.SetLastCheckpoint(Checkpoint);
         c.GetComponent<RespawnCar>().SetLastCheckpoint(Checkpoint);
-        c.GetComponent<VictoryScript>().SetCheckpointPassed(this);
+        c.GetComponent<VictoryScript>().SetCheckpointPassed();
         //Debug.Log("Checkpoint x : " + Checkpoint.position.x.ToString());
     }
 }

@@ -198,9 +198,11 @@ GameObject:
   - component: {fileID: 54476803482225358}
   - component: {fileID: 114073270172235766}
   - component: {fileID: 65640290482879144}
+  - component: {fileID: 114352755820486942}
+  - component: {fileID: 114863910434076198}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,8 +247,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784534047460762}
-  m_LocalRotation: {x: 0, y: 0.7094477, z: 0, w: 0.7047581}
-  m_LocalPosition: {x: 292.49, y: 1.1, z: 97.47}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 254.42, y: 0.849, z: 326.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4348895640172824}
@@ -850,7 +852,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784534047460762}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 13
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -897,7 +899,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784534047460762}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ae43adcc7a0aa4dbcdb263f570b461, type: 3}
   m_Name: 
@@ -925,8 +927,8 @@ MonoBehaviour:
   - {fileID: 4876763713976740}
   - {fileID: 4428042048994988}
   - {fileID: 4136974414920758}
-  MotorPower: 500
-  MaxTurn: 25
+  MotorPower: 1000
+  MaxTurn: 35
 --- !u!114 &114318086422410706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -940,6 +942,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CarTransform: {fileID: 0}
   LastCheckpoint: {fileID: 0}
+--- !u!114 &114352755820486942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784534047460762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ef508d9e31a3b499920c0242f3b8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListCheckpoint:
+  - {fileID: 0}
+  - {fileID: 0}
+  AllPassed: 0
+  WinText: {fileID: 0}
 --- !u!114 &114446400216593936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -954,6 +972,18 @@ MonoBehaviour:
   PvMax: 10
   CurrentPv: 0
   UiLife: {fileID: 0}
+--- !u!114 &114863910434076198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784534047460762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f86fb452d8dc8d44949882e1d689477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurentWeapon: {fileID: 0}
 --- !u!124 &124307661582735678
 Behaviour:
   m_ObjectHideFlags: 1

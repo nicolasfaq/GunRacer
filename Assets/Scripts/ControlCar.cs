@@ -62,11 +62,11 @@ public class ControlCar : MonoBehaviour {
 			GetCollider(2).brakeTorque = 0.0f;
 			GetCollider(3).brakeTorque = 0.0f;
 
-            //GetCollider(0).motorTorque = InstantPower;
-            //GetCollider(1).motorTorque = InstantPower;
+            GetCollider(0).motorTorque = InstantPower;
+            GetCollider(1).motorTorque = InstantPower;
             GetCollider(2).motorTorque = InstantPower;
-			GetCollider(3).motorTorque = InstantPower;
-		}
+            GetCollider(3).motorTorque = InstantPower;
+        }
 
     }
 
