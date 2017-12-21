@@ -7,6 +7,7 @@ public class LifeCar : MonoBehaviour {
     public float PvMax;
     public float CurrentPv;
     public Transform UiLife;
+    public GameObject ExplosionParticle;
 
     public string Respawn;
 
@@ -44,9 +45,30 @@ public class LifeCar : MonoBehaviour {
         if (c.gameObject.tag == "Bullet")
         {
             Damage(c.GetComponent<DamageScript>().DamagePoint);
+            //ContactPoint contact = c.GetComponent<ContactPoint>();
+            //Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+            //Vector3 pos = contact.point;
+            //Instantiate(ExplosionParticle, pos, rot);
+
             Destroy(c.gameObject);
         }
-            
+        if (c.gameObject.tag == "Mine")
+        {
+            Damage(c.GetComponent<DamageScript>().DamagePoint);
+
+            Destroy(c.gameObject, 2.0f);
+        }
     }
+    //private void OnCollisionEnter(Collision c)
+    //{
+    //    if (c.gameObject.tag == "Bullet")
+    //    {
+    //        Damage(c.gameObject.GetComponent<DamageScript>().DamagePoint);
+    //        Vector3 Pos = c.contacts[0].point;
+    //        Instantiate(ExplosionParticle, Pos, Quaternion.identity);
+
+    //        Destroy(c.gameObject);
+    //    }
+    //}
 
 }

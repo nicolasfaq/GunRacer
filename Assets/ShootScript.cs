@@ -38,5 +38,8 @@ public class ShootScript : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
+        if (GetComponent<AudioSource>())
+            GetComponent<AudioSource>().Play();
     }
 }

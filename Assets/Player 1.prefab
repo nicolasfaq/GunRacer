@@ -196,10 +196,10 @@ GameObject:
   - component: {fileID: 114446400216593936}
   - component: {fileID: 114318086422410706}
   - component: {fileID: 54476803482225358}
-  - component: {fileID: 114073270172235766}
   - component: {fileID: 65640290482879144}
   - component: {fileID: 114352755820486942}
   - component: {fileID: 114863910434076198}
+  - component: {fileID: 82960838371703822}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -248,7 +248,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784534047460762}
   m_LocalRotation: {x: 0, y: 0.7094477, z: 0, w: 0.7047581}
-  m_LocalPosition: {x: 290.09, y: 1.1, z: 97.4}
+  m_LocalPosition: {x: 278.69, y: 1.1, z: 104.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4348895640172824}
@@ -884,8 +884,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.93, y: 1.3, z: 4.57}
-  m_Center: {x: 0, y: 0.62, z: 0}
+  m_Size: {x: 1.93, y: 2.45, z: 2.28}
+  m_Center: {x: 0, y: 1.29, z: 1.01}
 --- !u!81 &81711032277687310
 AudioListener:
   m_ObjectHideFlags: 1
@@ -893,20 +893,86 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1288376892057756}
   m_Enabled: 1
---- !u!114 &114073270172235766
-MonoBehaviour:
+--- !u!82 &82960838371703822
+AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784534047460762}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07ae43adcc7a0aa4dbcdb263f570b461, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PrefabBullet: {fileID: 1818663395070750, guid: 94676c1d83dfc0d408296a0bb0e1fc0a,
-    type: 2}
-  BulletStartPosition: {fileID: 0}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 03e3bd08a6e70684dbe299a3e185fdd2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114119801585835206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -922,6 +988,7 @@ MonoBehaviour:
   MoveBackward: s
   TurnRight: d
   TurnLeft: q
+  topSpeed: 100
   Wheels:
   - {fileID: 4836038189811436}
   - {fileID: 4876763713976740}
@@ -956,6 +1023,7 @@ MonoBehaviour:
   TotCheckpoint: 6
   StatCheckpoint: 0
   WinText: {fileID: 0}
+  AllPassed: 
 --- !u!114 &114446400216593936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -970,6 +1038,8 @@ MonoBehaviour:
   PvMax: 10
   CurrentPv: 0
   UiLife: {fileID: 0}
+  ExplosionParticle: {fileID: 1779881074926358, guid: 7fdda3c6252719d43af5893ff316daa6,
+    type: 2}
   Respawn: a
 --- !u!114 &114863910434076198
 MonoBehaviour:
@@ -984,6 +1054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurentWeapon: {fileID: 0}
   shoot: 99
+  Ammo: {fileID: 0}
 --- !u!124 &124307661582735678
 Behaviour:
   m_ObjectHideFlags: 1

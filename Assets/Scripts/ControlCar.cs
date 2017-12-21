@@ -9,7 +9,9 @@ public class ControlCar : MonoBehaviour {
     public string TurnRight;
     public string TurnLeft;
 
-
+    public float topSpeed = 100; // km per hour
+    private float currentSpeed = 0;
+    private float pitch = 0;
 
 
     public Transform[] Wheels;
@@ -72,7 +74,9 @@ public class ControlCar : MonoBehaviour {
             GetCollider(3).motorTorque = InstantPower;
         }
 
-		
+        currentSpeed = transform.GetComponent<Rigidbody>().velocity.magnitude * 3.6f;
+        pitch = currentSpeed / topSpeed;
+        GetComponent<AudioSource>().pitch = pitch;
 
     }
 

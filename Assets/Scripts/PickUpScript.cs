@@ -22,7 +22,7 @@ public class PickUpScript : MonoBehaviour {
             this.gameObject.transform.parent = c.transform;
             if (this.gameObject.tag == "RocketLauncher")
             {
-                this.gameObject.transform.localPosition = new Vector3(-0.12f, 1.07f, -0.04f);
+                this.gameObject.transform.localPosition = new Vector3(-0.12f, 1f, -0.04f);
                 this.gameObject.transform.localRotation = new Quaternion(0.165f, -179.819f, 0.086f,0);
                 this.gameObject.GetComponent<SphereCollider>().enabled = false;
             }

@@ -24,7 +24,8 @@ public class CheckpointScript : MonoBehaviour {
     {
         //Car.SetLastCheckpoint(Checkpoint);
         c.GetComponent<RespawnCar>().SetLastCheckpoint(Checkpoint);
-        c.GetComponent<VictoryScript>().AllPassed[Id]=true;
+        c.GetComponent<VictoryScript>().AllPassed[Id] = true;
+
         //Debug.Log("Checkpoint x : " + Checkpoint.position.x.ToString());
     }
 }
