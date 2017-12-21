@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShoot1 : MonoBehaviour {
+public class PlayerShoot : MonoBehaviour {
 
 
 	public GameObject PrefabBullet;
@@ -22,7 +22,8 @@ public class PlayerShoot1 : MonoBehaviour {
 			Bullet.GetComponent<Rigidbody>().AddForce(BulletStartPosition.forward * 1000);
 
 			// Destroy the bullet after 2 seconds
-			Destroy(Bullet, 2.0f);
+			DestroyObject(Bullet,3.0f);
+
 		}
 	}
 

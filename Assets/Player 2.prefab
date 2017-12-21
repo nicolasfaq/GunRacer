@@ -604,6 +604,7 @@ MonoBehaviour:
   MoveBackward: k
   TurnRight: l
   TurnLeft: j
+  shoot: m
   Wheels:
   - {fileID: 4760272473856128}
   - {fileID: 4824179435946234}
@@ -611,7 +612,14 @@ MonoBehaviour:
   - {fileID: 4676776031472002}
   MotorPower: 500
   MaxTurn: 25
+<<<<<<< Updated upstream
 --- !u!114 &114272740870603142
+=======
+  BulletStartPosition: {fileID: 0}
+  PrefabBullet: {fileID: 1818663395070750, guid: 94676c1d83dfc0d408296a0bb0e1fc0a,
+    type: 2}
+--- !u!114 &114581082710392906
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
