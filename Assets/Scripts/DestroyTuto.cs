@@ -6,7 +6,7 @@ public class DestroyTuto : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, 15.0f);
+		Destroy (gameObject, 24.0f);
 	}
 	
 	// Update is called once per frame
